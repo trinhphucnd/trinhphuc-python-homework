@@ -7,10 +7,14 @@ biggest = max(menu)
 
 print("Now my biggest sheep has size",biggest, "let's shear it ")
 n = (menu.index(biggest))
-menu[n] = "8"
+menu[n] = 8
 print("After shearing, here is my flock ")
 print(*menu,sep=", ")
 print("One Month has passed , now here is my flock")
-for index , item in enumerate(menu):
-    n = int(item)+50
-    print(n , end=", ")
+i=0
+for i in range (6):
+    i+=1
+    menu[i] = menu[i] +50
+    
+print(*menu,sep=", ")
+
