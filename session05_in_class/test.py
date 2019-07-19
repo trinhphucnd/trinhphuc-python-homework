@@ -1,4 +1,4 @@
-person = ["Phuc", 22 ,"Nam Dinh",["Coding" , "Manga", "Football"]]
+# person = ["Phuc", 22 ,"Nam Dinh",["Coding" , "Manga", "Football"]]
 
 person = {
     "name" :"Phuc",
@@ -13,7 +13,7 @@ person = {
 # # print(person)
 # for value in person.values():
 #     print(value)
-# for key , value in person.items():
-#     print(key, value)
-person["name"] = "Thuong"
-print(person)
+for key , value in person.items():
+    print( value)
+# person["name"] = "Thuong"
+# print(person)
