@@ -35,7 +35,7 @@ obs = [
 ]
 
 
-#in cau do
+#In câu đố
 print_map(map_sokoban,boxes,dess,player,obs)
 
 while True :
