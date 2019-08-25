@@ -35,7 +35,7 @@ obs = [
 ]
 
 
-
+#in cau do
 print_map(map_sokoban,boxes,dess,player,obs)
 
 while True :
@@ -111,7 +111,7 @@ while True :
 
     # In map
     print_map(map_sokoban,boxes,dess,player,obs)
-    print()
+    
     
     # Kiểm tra kết quả
     if check_result(boxes,dess):
