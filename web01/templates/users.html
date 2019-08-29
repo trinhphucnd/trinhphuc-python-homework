@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% for u in users %}
+        {% if u == username %}
+        <h2>Name : {{ users[u]['name'] }}</h2>
+        <h2> Age : {{ users[u]['age'] }}</h2>
+        {% endif %}
+    {% endfor %}
+</head>
+<body>
+    
+</body>
+</html>
