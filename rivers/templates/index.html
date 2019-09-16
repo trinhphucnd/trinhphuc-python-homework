@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+</head>
+<body>
+    <h1>Africa</h1>
+    
+
+    <table border="1px">
+        
+    <thead>
+        <th>STT</th>
+        <th>Tên</th>
+        <th>Chiều dài</th>
+        <th>Vị Trí</th>
+        
+    </thead>
+    <tbody>
+        {% for river in all_rivers_africa %}
+    <tr>
+    <td> {{  loop.index  }}</td>    
+    <td>{{  river.name  }}</td>
+    <td>{{  river.length  }}</td>
+    <td>{{  river.continent  }}</td>
+        
+    {% endfor %}
+
+    </tr>
+
+    </tbody>
+    </table>
+    <hr>
+    <h1>S.Africa less than 1000 km</h1>
+    <table border="1px">
+        
+        <thead>
+            <th>STT</th>
+            <th>Tên</th>
+            <th>Chiều dài</th>
+            <th>Vị Trí</th>
+            
+        </thead>
+        <tbody>
+            {% for river in all_rivers_safrica %}
+        <tr>
+        <td> {{  loop.index  }}</td>    
+        <td>{{  river.name  }}</td>
+        <td>{{  river.length  }}</td>
+        <td>{{  river.continent  }}</td>
+            
+        {% endfor %}
+    
+        </tr>
+    
+        </tbody>
+        </table>
+    
+</body>
+</html>

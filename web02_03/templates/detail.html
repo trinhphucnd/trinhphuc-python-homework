@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    {%  if service.gender == 0 %}
+    <img src="../static/image/tulinh.jpg" alt="female">
+    {%  else %}
+    <img src="../static/image/male.png" alt="male">
+    {%  endif  %}
+    <p>Name : {{  service.name  }}</p>
+    <p>Yob : {{  service.yob  }}</p>
+    <p>gender : {{  service.gender  }}</p>
+    <p>Phone number : {{  service.phone  }}</p>
+    <p>Address : {{  service.address  }}</p>
+    <p>Status : {{  service.status  }}</p>
+    <p>Description : {{ service.description }} </p>
+    <p>Measurement : {{ service.measurements }}</p>
+    
+</body>
+</html>
